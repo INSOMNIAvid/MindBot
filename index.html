@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&family=Playfair+Display:wght@400;500;600;700&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&family=Nunito:wght@400;600;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- Lottie для анимированных аватаров -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
     <!-- Firebase SDK -->
@@ -20,6 +20,19 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
+    <!-- Кнопка смены темы -->
+    <button id="theme-toggle" class="theme-toggle"><i class="fas fa-moon"></i></button>
+    
+    <!-- Выбор шрифта -->
+    <div class="font-selector-container">
+        <select id="font-selector" class="font-selector">
+            <option value="Montserrat">Montserrat</option>
+            <option value="Nunito">Nunito</option>
+            <option value="Playfair Display">Playfair Display</option>
+            <option value="Roboto">Roboto</option>
+        </select>
+    </div>
+
     <!-- Шапка -->
     <header class="animate__animated animate__fadeInDown">
         <div class="logo">
@@ -49,8 +62,6 @@
                     <a href="#" id="register-link">Регистрация</a>
                     <a href="#" id="subscription-link">Подписка</a>
                     <a href="#" id="logout-link" style="display:none;">Выйти</a>
-                    <a href="#" id="theme-toggle-link">Сменить тему</a>
-                    <a href="#" id="font-toggle-link">Сменить шрифт</a>
                 </div>
             </div>
         </div>
@@ -728,7 +739,7 @@
             <span class="close-modal">&times;</span>
             <h3>Условия использования</h3>
             <div class="terms-content">
-                <p>Последнее обновление: 01.01.2023</p>
+                <p>Последнее обновление: 01.01.2025</p>
                 
                 <h4>1. Общие положения</h4>
                 <p>Используя сервис MindBot, вы соглашаетесь с настоящими Условиями использования. Если вы не согласны с этими условиями, пожалуйста, не используйте наш сервис.</p>
